@@ -1,0 +1,20 @@
+.character-length {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+    
+}
+
+h2{
+    font-size: 1rem;
+}
+
+input[type="range"] {
+    width: 100%;
+    margin-bottom: 1rem;
+    background-color: var(--cointainers);
+}
+
+span {
+    color: var(--border)
+}

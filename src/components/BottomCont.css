@@ -1,0 +1,7 @@
+.bottom-cont {
+  display: flex;
+  background-color: var(--cointainers);
+  flex-direction: column;
+  flex-wrap: nowrap;
+  padding: 1rem;
+}

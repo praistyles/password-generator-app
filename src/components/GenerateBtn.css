@@ -1,0 +1,10 @@
+button {
+    background-color: var(--border);
+    padding: 1rem;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    font-family:"JetBrains Mono", monospace;
+    text-transform: uppercase;
+    font-weight: 700;
+}

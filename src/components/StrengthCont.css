@@ -1,0 +1,51 @@
+.strength-cont {
+    background-color: rgb(43, 43, 42);
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+    
+    
+}
+
+h2{
+    font-size: 1rem;
+    padding: 0.8rem; 
+    color: rgb(148, 146, 136);
+    
+}
+
+.strength-bars{
+    display: flex;
+    gap: 0.5rem;
+    padding: 0.5rem;
+     
+}
+
+.bar1 {
+    border: 1px solid rgb(235, 235, 235);
+    align-self: center;
+    width: 10px;
+    height:70%;
+}
+
+.bar2 {
+    border: 1px solid rgb(235, 235, 235);
+    align-self: center;
+    width: 10px;
+    height: 80%;
+}
+
+.bar3 {
+    border: 1px solid rgb(235, 235, 235);
+    align-self: center;
+    width: 10px;
+    height: 90%;
+}
+
+.bar4 {
+    border: 1px solid rgb(235, 235, 235);
+    align-self: center;
+    width: 10px;
+    height: 100%;
+}
+
