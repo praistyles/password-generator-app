@@ -1,11 +1,9 @@
-.App  {
-
+.App {
   display: flex;
   flex-direction: column;
-  max-width: 600px;
-  height: 100vh;
-  margin: 2rem auto;
-
-
-
+  width: min(100%, 540px);
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 2rem 1rem 3rem;
+  justify-content: center;
 }

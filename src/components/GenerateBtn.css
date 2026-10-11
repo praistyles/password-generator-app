@@ -1,10 +1,31 @@
-button {
-    background-color: var(--border);
-    padding: 1rem;
-    width: 100%;
-    border: none;
-    cursor: pointer;
-    font-family:"JetBrains Mono", monospace;
-    text-transform: uppercase;
-    font-weight: 700;
+.generate-btn {
+  margin-top: 0.5rem;
+}
+
+.generate-btn button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.85rem;
+  width: 100%;
+  padding: 1rem 1.15rem;
+  border: none;
+  background-color: var(--border);
+  color: #0e0e0e;
+  cursor: pointer;
+  font-family: 'JetBrains Mono', monospace;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.generate-btn button:hover {
+  transform: translateY(-1px);
+  filter: brightness(1.05);
+}
+
+.generate-btn button img {
+  width: 1rem;
+  height: 1rem;
 }

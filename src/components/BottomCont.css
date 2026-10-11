@@ -1,7 +1,8 @@
 .bottom-cont {
   display: flex;
-  background-color: var(--cointainers);
   flex-direction: column;
-  flex-wrap: nowrap;
-  padding: 1rem;
+  background-color: var(--containers);
+  padding: 1.5rem 1.25rem;
+  border-radius: 0.2rem;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.2);
 }

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap');
 
 * {
   box-sizing: border-box;
@@ -11,20 +11,36 @@ img {
   max-width: 100%;
 }
 
-
 :root {
-  --bg: hsl(0, 0%, 8%);
-  --text: hsl(0, 0%, 100%);
-  --border: hsl(118, 67%, 76%);
-  --bars: 0px 4px 8px rgb(255, 252, 49);
-  --cointainers: hsl(0, 1%, 27%);
+  --bg: #080b0d;
+  --text: #f7f7f7;
+  --muted: rgba(255, 255, 255, 0.6);
+  --border: #a4ffaf;
+  --containers: #1d1d1d;
+  --field: #2a2a2a;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
 }
 
 body {
-  font-family: "JetBrains Mono", monospace;
+  min-height: 100vh;
+  font-family: 'JetBrains Mono', monospace;
   font-size: 16px;
   line-height: 1.5;
   color: var(--text);
-  background-color: var(--bg);
+  background: radial-gradient(circle at top, #141414 0%, var(--bg) 55%);
+}
+
+button,
+input {
+  font: inherit;
+}
+
+button {
+  border: none;
 }
 

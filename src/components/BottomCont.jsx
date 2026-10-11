@@ -1,20 +1,23 @@
 import './BottomCont.css'
 import { CharacterCont } from './CharacterCont'
-import { StrengthCont } from './StrengthCont'
-import { GenerateBtn } from './GenerateBtn'
 import { CheckboxCont } from './CheckboxCont'
+import { GenerateBtn } from './GenerateBtn'
+import { StrengthCont } from './StrengthCont'
 
-
-
-export function BottomCont() {
+export function BottomCont({
+  length,
+  onChangeLength,
+  options,
+  onToggleOption,
+  onGenerate,
+  strength,
+}) {
   return (
     <div className="bottom-cont">
-
-      <CharacterCont />
-      <CheckboxCont />
-      <StrengthCont />
-      <GenerateBtn />
-      
+      <CharacterCont value={length} onChange={onChangeLength} />
+      <CheckboxCont options={options} onToggle={onToggleOption} />
+      <StrengthCont strength={strength} />
+      <GenerateBtn onGenerate={onGenerate} />
     </div>
-  );
-}   
+  )
+}

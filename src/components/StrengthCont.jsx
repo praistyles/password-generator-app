@@ -1,15 +1,31 @@
 import './StrengthCont.css'
 
-export function StrengthCont() {
+export function StrengthCont({ strength }) {
   return (
     <div className="strength-cont">
-      <h2>Strength</h2>
-      <div className="strength-bars">
-        <div className="bar1"></div>
-        <div className="bar2"></div>
-        <div className="bar3"></div>
-        <div className="bar4"></div>
+      <div className="strength-label">
+        <h2>Strength</h2>
+      </div>
+      <div className="strength-display">
+        <span className="strength-value">{strength.label}</span>
+        <div className="strength-bars" aria-label={`Password strength: ${strength.label}`}>
+          {[0, 1, 2, 3].map((index) => (
+            <span
+              key={index}
+              className={`bar ${strength.bars[index] ? 'active' : ''}`}
+              style={
+                strength.bars[index]
+                  ? {
+                      backgroundColor: strength.color,
+                      borderColor: strength.color,
+                      boxShadow: `0 0 12px ${strength.color}`,
+                    }
+                  : undefined
+              }
+            />
+          ))}
+        </div>
       </div>
     </div>
-  );
+  )
 }

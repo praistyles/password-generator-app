@@ -1,51 +1,49 @@
 .strength-cont {
-    background-color: rgb(43, 43, 42);
-    margin-bottom: 1rem;
-    display: flex;
-    justify-content: space-between;
-    
-    
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  background-color: rgba(18, 18, 18, 0.65);
+  padding: 1rem 1.1rem;
+  margin-bottom: 1rem;
 }
 
-h2{
-    font-size: 1rem;
-    padding: 0.8rem; 
-    color: rgb(148, 146, 136);
-    
+.strength-label h2 {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.6);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
 }
 
-.strength-bars{
-    display: flex;
-    gap: 0.5rem;
-    padding: 0.5rem;
-     
+.strength-display {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
-.bar1 {
-    border: 1px solid rgb(235, 235, 235);
-    align-self: center;
-    width: 10px;
-    height:70%;
+.strength-value {
+  color: var(--text);
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 
-.bar2 {
-    border: 1px solid rgb(235, 235, 235);
-    align-self: center;
-    width: 10px;
-    height: 80%;
+.strength-bars {
+  display: flex;
+  gap: 0.45rem;
 }
 
-.bar3 {
-    border: 1px solid rgb(235, 235, 235);
-    align-self: center;
-    width: 10px;
-    height: 90%;
+.bar {
+  display: inline-block;
+  width: 0.7rem;
+  height: 1.7rem;
+  border: 2px solid rgba(255, 255, 255, 0.75);
+  background: transparent;
+  transition: all 0.2s ease;
 }
 
-.bar4 {
-    border: 1px solid rgb(235, 235, 235);
-    align-self: center;
-    width: 10px;
-    height: 100%;
+.bar.active {
+  border-width: 2px;
 }
 
