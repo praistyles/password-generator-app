@@ -1,16 +1,84 @@
-# React + Vite
+# Password Generator App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive React password generator built as part of the Frontend Mentor challenge. The app lets users generate secure passwords based on their chosen character types, view the password strength, and copy the password to the clipboard.
 
-Currently, two official plugins are available:
+## Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- GitHub Pages: https://praistyles.github.io/password-generator-app/
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Adjustable password length with a range slider
+- Toggleable character options:
+  - uppercase letters
+  - lowercase letters
+  - numbers
+  - symbols
+- Real-time password strength rating
+- One-click copy to clipboard
+- Responsive layout for mobile and desktop
+- Clean, dark-themed UI matching the challenge design
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React
+- Vite
+- JavaScript
+- CSS
+
+## Project Structure
+
+```bash
+src/
+├── App.jsx
+├── App.css
+├── index.css
+├── main.jsx
+└── components/
+    ├── BottomCont.jsx
+    ├── CharacterCont.jsx
+    ├── CheckboxCont.jsx
+    ├── GenerateBtn.jsx
+    ├── PasswordCont.jsx
+    ├── StrengthCont.jsx
+    ├── BottomCont.css
+    ├── CharacterCont.css
+    ├── CheckboxCont.css
+    ├── GenerateBtn.css
+    ├── PasswordCont.css
+    └── StrengthCont.css
+```
+
+## How it works
+
+The app keeps track of:
+
+- the selected password length,
+- which character sets are enabled,
+- the generated password,
+- the current password strength.
+
+When the user changes settings, the app generates a new password automatically. The password strength is calculated from the selected character types and the password length.
+
+## Run locally
+
+```bash
+npm install
+npm run dev
+```
+
+## Build for production
+
+```bash
+npm run build
+```
+
+## Deploy to GitHub Pages
+
+```bash
+npm run deploy
+```
+
+## Author
+
+Built by Praistyles as a Frontend Mentor challenge project.
